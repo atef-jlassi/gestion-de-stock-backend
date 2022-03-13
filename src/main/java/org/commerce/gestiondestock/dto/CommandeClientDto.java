@@ -2,6 +2,7 @@ package org.commerce.gestiondestock.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import org.commerce.gestiondestock.enums.EtatCommande;
 import org.commerce.gestiondestock.models.Client;
 import org.commerce.gestiondestock.models.CommandeClient;
 
@@ -18,6 +19,8 @@ public class CommandeClientDto {
 
     private Instant dateCommande;
 
+    private EtatCommande etatCommande;
+
     private ClientDto client;
 
     private List<LigneCommandeClientDto> ligneCommandeClients;
@@ -32,6 +35,7 @@ public class CommandeClientDto {
                 .id(commandeClient.getId())
                 .code(commandeClient.getCode())
                 .dateCommande(commandeClient.getDateCommande())
+                .etatCommande(commandeClient.getEtatCommande())
                 .client(ClientDto.fromEntity(commandeClient.getClient()))
                 .build();
     }
@@ -46,6 +50,7 @@ public class CommandeClientDto {
         commandeClient.setId(commandeClientDto.getId());
         commandeClient.setCode(commandeClientDto.getCode());
         commandeClient.setDateCommande(commandeClientDto.getDateCommande());
+        commandeClient.setEtatCommande(commandeClientDto.getEtatCommande());
         commandeClient.setClient(ClientDto.toEntity(commandeClientDto.getClient()));
 
         return commandeClient;

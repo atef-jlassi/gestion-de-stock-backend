@@ -1,6 +1,7 @@
 package org.commerce.gestiondestock.models;
 
 import lombok.*;
+import org.commerce.gestiondestock.enums.EtatCommande;
 
 import javax.persistence.*;
 import java.time.Instant;
@@ -20,6 +21,10 @@ public class CommandeFournisseur extends AbstractEntity {
 
     @Column(name = "date_commande")
     private Instant dateCommande;
+
+    @Column(name = "etatcommande")
+    @Enumerated(EnumType.STRING)
+    private EtatCommande etatCommande;
 
     @ManyToOne
     @JoinColumn(name = "id_fournisseur")

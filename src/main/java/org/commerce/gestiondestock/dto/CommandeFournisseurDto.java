@@ -2,6 +2,7 @@ package org.commerce.gestiondestock.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import org.commerce.gestiondestock.enums.EtatCommande;
 import org.commerce.gestiondestock.models.CommandeFournisseur;
 
 import java.time.Instant;
@@ -17,6 +18,8 @@ public class CommandeFournisseurDto {
 
     private Instant dateCommande;
 
+    private EtatCommande etatCommande;
+
     private FournisseurDto fournisseur;
 
     private List<LigneCommandeFournisseurDto> ligneCommandeFournisseurs;
@@ -30,6 +33,7 @@ public class CommandeFournisseurDto {
                 .id(commandeFournisseur.getId())
                 .code(commandeFournisseur.getCode())
                 .dateCommande(commandeFournisseur.getDateCommande())
+                .etatCommande(commandeFournisseur.getEtatCommande())
                 .fournisseur(FournisseurDto.fromEntity(commandeFournisseur.getFournisseur()))
                 .build();
     }
@@ -44,6 +48,7 @@ public class CommandeFournisseurDto {
         commandeFournisseur.setId(commandeFournisseurDto.getId());
         commandeFournisseur.setCode(commandeFournisseurDto.getCode());
         commandeFournisseur.setDateCommande(commandeFournisseurDto.getDateCommande());
+        commandeFournisseur.setEtatCommande(commandeFournisseurDto.getEtatCommande());
         commandeFournisseur.setFournisseur(FournisseurDto.toEntity(commandeFournisseurDto.getFournisseur()));
 
         return commandeFournisseur;
