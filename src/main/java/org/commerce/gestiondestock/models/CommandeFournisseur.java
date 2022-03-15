@@ -22,7 +22,7 @@ public class CommandeFournisseur extends AbstractEntity {
     @Column(name = "date_commande")
     private Instant dateCommande;
 
-    @Column(name = "etatcommande")
+    @Column(name = "etat_commande")
     @Enumerated(EnumType.STRING)
     private EtatCommande etatCommande;
 
