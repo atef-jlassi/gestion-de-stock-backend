@@ -17,6 +17,8 @@ public class CategoryDto {
 
     private String designation;
 
+    private Integer idEntreprise;
+
     @JsonIgnore
     private List<ArticleDto> articles;
 

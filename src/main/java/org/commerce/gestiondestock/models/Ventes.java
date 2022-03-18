@@ -1,9 +1,11 @@
 package org.commerce.gestiondestock.models;
 
 import lombok.*;
+import org.apache.catalina.LifecycleState;
 
 import javax.persistence.*;
 import java.time.Instant;
+import java.util.List;
 
 @Data
 @Builder
@@ -23,4 +25,10 @@ public class Ventes extends AbstractEntity {
 
     @Column(name = "commentaire")
     private String commentaire;
+
+    @Column(name = "id_entreprise")
+    private Integer idEntreprise;
+
+    @OneToMany(mappedBy = "vente")
+    private List<LigneVente> ligneVentes;
 }

@@ -29,4 +29,7 @@ public class MvtStk extends AbstractEntity {
     @Enumerated(EnumType.STRING)
     private TypeMvtStk typeMvt;
 
+    @Column(name = "id_entreprise")
+    private Integer idEntreprise;
+
 }

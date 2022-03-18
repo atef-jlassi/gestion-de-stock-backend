@@ -26,6 +26,8 @@ public class ArticleDto {
 
     private CategoryDto category;
 
+    private Integer idEntreprise;
+
     public static ArticleDto fromEntity(Article article) {
         if (article==null) {
             // TODO throw an exception
@@ -41,6 +43,7 @@ public class ArticleDto {
                 .prixUnitaireTtc(article.getPrixUnitaireTtc())
                 .photo(article.getPhoto())
                 .category(CategoryDto.fromEntity(article.getCategory()))
+                .idEntreprise(article.getIdEntreprise())
                 .build();
     }
 
@@ -58,7 +61,7 @@ public class ArticleDto {
         article.setPrixUnitaireTtc(articleDto.getPrixUnitaireTtc());
         article.setPhoto(articleDto.getPhoto());
         article.setCategory(CategoryDto.toEntity(articleDto.getCategory()));
-
+        article.setIdEntreprise(articleDto.getIdEntreprise());
         return article;
     }
 

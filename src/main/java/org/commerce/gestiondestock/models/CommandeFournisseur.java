@@ -26,6 +26,9 @@ public class CommandeFournisseur extends AbstractEntity {
     @Enumerated(EnumType.STRING)
     private EtatCommande etatCommande;
 
+    @Column(name = "id_entreprise")
+    private Integer idEntreprise;
+
     @ManyToOne
     @JoinColumn(name = "id_fournisseur")
     private Fournisseur fournisseur;
