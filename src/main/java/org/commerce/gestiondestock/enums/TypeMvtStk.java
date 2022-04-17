@@ -5,5 +5,5 @@ import lombok.Getter;
 import lombok.Setter;
 
 public enum TypeMvtStk {
-    ENTREE, SORTIE
+    ENTREE, CORRECTION_POS, CORRECTION_NEG, SORTIE
 }

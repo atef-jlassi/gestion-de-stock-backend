@@ -1,8 +1,8 @@
 package org.commerce.gestiondestock.models;
 
 import lombok.*;
+import org.commerce.gestiondestock.enums.SourceMvtStk;
 import org.commerce.gestiondestock.enums.TypeMvtStk;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -28,6 +28,10 @@ public class MvtStk extends AbstractEntity {
 
     @Enumerated(EnumType.STRING)
     private TypeMvtStk typeMvt;
+
+    @Column(name = "sourcemvt")
+    @Enumerated(EnumType.STRING)
+    private SourceMvtStk sourceMvt;
 
     @Column(name = "id_entreprise")
     private Integer idEntreprise;

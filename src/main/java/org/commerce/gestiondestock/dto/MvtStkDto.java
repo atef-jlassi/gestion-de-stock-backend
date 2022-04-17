@@ -2,6 +2,7 @@ package org.commerce.gestiondestock.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import org.commerce.gestiondestock.enums.SourceMvtStk;
 import org.commerce.gestiondestock.enums.TypeMvtStk;
 import org.commerce.gestiondestock.models.MvtStk;
 
@@ -22,6 +23,9 @@ public class MvtStkDto {
 
     private TypeMvtStk typeMvt;
 
+    private SourceMvtStk sourceMvt;
+
+    private Integer idEntreprise;
 
     public static MvtStkDto fromEntity(MvtStk mvtStk) {
         if (mvtStk==null) {
@@ -34,6 +38,7 @@ public class MvtStkDto {
                 .dateMvt(mvtStk.getDateMvt())
                 .quantite(mvtStk.getQuantite())
                 .typeMvt(mvtStk.getTypeMvt())
+                .sourceMvt(mvtStk.getSourceMvt())
                 .build();
     }
 
@@ -49,7 +54,7 @@ public class MvtStkDto {
         mvtStk.setDateMvt(mvtStkDto.getDateMvt());
         mvtStk.setQuantite(mvtStkDto.getQuantite());
         mvtStk.setTypeMvt(mvtStkDto.getTypeMvt());
-
+        mvtStk.setSourceMvt(mvtStkDto.getSourceMvt());
         return mvtStk;
     }
 }

@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @Builder
@@ -18,6 +19,10 @@ public class LigneVente extends AbstractEntity {
     @JoinColumn(name = "id_vente")
     private Ventes vente;
 
+    @ManyToOne
+    @JoinColumn(name = "idarticle")
+    private Article article;
+
     @Column(name = "quantite")
     private BigDecimal quantite;
 
@@ -26,4 +31,5 @@ public class LigneVente extends AbstractEntity {
 
     @Column(name = "id_entreprise")
     private Integer idEntreprise;
+
 }

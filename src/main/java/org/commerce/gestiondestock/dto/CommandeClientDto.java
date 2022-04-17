@@ -1,5 +1,6 @@
 package org.commerce.gestiondestock.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
 import org.commerce.gestiondestock.enums.EtatCommande;
@@ -23,6 +24,8 @@ public class CommandeClientDto {
 
     private ClientDto client;
 
+    private Integer idEntreprise;
+
     private List<LigneCommandeClientDto> ligneCommandeClients;
 
     // CommandeClient -> CommandeClientDto
@@ -36,6 +39,7 @@ public class CommandeClientDto {
                 .code(commandeClient.getCode())
                 .dateCommande(commandeClient.getDateCommande())
                 .etatCommande(commandeClient.getEtatCommande())
+                .idEntreprise(commandeClient.getIdEntreprise())
                 .client(ClientDto.fromEntity(commandeClient.getClient()))
                 .build();
     }
@@ -51,8 +55,13 @@ public class CommandeClientDto {
         commandeClient.setCode(commandeClientDto.getCode());
         commandeClient.setDateCommande(commandeClientDto.getDateCommande());
         commandeClient.setEtatCommande(commandeClientDto.getEtatCommande());
+        commandeClient.setIdEntreprise(commandeClientDto.getIdEntreprise());
         commandeClient.setClient(ClientDto.toEntity(commandeClientDto.getClient()));
 
         return commandeClient;
+    }
+
+    public boolean isCommandeLivree() {
+        return EtatCommande.LIVREE.equals(this.etatCommande);
     }
 }
