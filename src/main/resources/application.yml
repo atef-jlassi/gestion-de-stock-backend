@@ -4,6 +4,12 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  ### mvc: pathmatch etc.. to SOLVE THE PROBLEM OF  Failed to start bean 'documentationPluginsBootstrapper
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
   ## Specify DBMS
   jpa:
     database: MYSQL
