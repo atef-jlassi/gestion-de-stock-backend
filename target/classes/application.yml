@@ -26,8 +26,6 @@ spring:
 
 server:
   port: 8081
-  netty:
-    h2c-max-content-length:
 
 flickr:
   apikey: 02fc2347bd7d33b972942cca2038c249

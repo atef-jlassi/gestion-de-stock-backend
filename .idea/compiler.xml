@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gestiondestockBackend" />
+        <module name="gestion-de-stock-backend" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gestion-de-stock-backend" options="-parameters" />
       <module name="gestiondestockBackend" options="-parameters" />
     </option>
   </component>
