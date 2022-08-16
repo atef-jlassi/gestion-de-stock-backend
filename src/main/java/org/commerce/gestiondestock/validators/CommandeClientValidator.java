@@ -1,10 +1,10 @@
 package org.commerce.gestiondestock.validators;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.commerce.gestiondestock.dto.CommandeClientDto;
 import org.springframework.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CommandeClientValidator {
 

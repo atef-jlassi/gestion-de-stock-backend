@@ -1,6 +1,6 @@
 package org.commerce.gestiondestock.controller;
 
-import org.commerce.gestiondestock.controller.api.ApiClient;
+import org.commerce.gestiondestock.controller.api.ClientApi;
 import org.commerce.gestiondestock.dto.ClientDto;
 import org.commerce.gestiondestock.services.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import java.util.List;
 import static org.commerce.gestiondestock.utils.Constants.APP_ROOT;
 
 @RestController
-public class ClientController implements ApiClient {
+public class ClientController implements ClientApi {
 
     private ClientService clientService;
 

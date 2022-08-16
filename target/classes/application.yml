@@ -14,10 +14,10 @@ spring:
   jpa:
     database: MYSQL
     show-sql: false
-#    properties:
-#      hibernate:
-#        session_factory:
-#          interceptor: org.commerce.gestiondestock.interceptor.Interceptor
+    properties:
+      hibernate:
+        session_factory:
+          interceptor: org.commerce.gestiondestock.interceptor.Interceptor
 
     # Hibernate DDL Auto (create, create-drop, update)
     hibernate:
@@ -26,6 +26,8 @@ spring:
 
 server:
   port: 8081
+  netty:
+    h2c-max-content-length:
 
 flickr:
   apikey: 02fc2347bd7d33b972942cca2038c249

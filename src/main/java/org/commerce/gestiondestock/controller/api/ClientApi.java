@@ -6,7 +6,7 @@ import java.util.List;
 import static org.commerce.gestiondestock.utils.Constants.APP_ROOT;
 
 @Api(APP_ROOT + "/clients")
-public interface ApiClient {
+public interface ClientApi {
 
     ClientDto save(ClientDto dto);
 

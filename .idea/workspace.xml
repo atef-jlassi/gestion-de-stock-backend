@@ -5,18 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4de66916-daf3-43fe-a56b-8a514cba14c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/CommandeClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/CommandeFournisseurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/EntrepriseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/FournisseurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/UtilisateurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/VentesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/CommandeClientApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/CommandeFournisseurApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/EntrepriseApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/FournisseurApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/UtilisateurApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/VentesApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/interceptor/Interceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/config/FlickrConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/config/FlickrConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/GestionDeStockApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/GestionDeStockApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/ClientApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/models/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/models/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/services/FournisseurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/services/FournisseurService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/services/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/services/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/validators/CommandeClientValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/validators/CommandeClientValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/validators/FournisseurValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/validators/FournisseurValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/GestionDeStockApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/GestionDeStockApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/config/FlickrConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/config/FlickrConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/controller/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/controller/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/controller/api/ApiClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/models/AbstractEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/models/AbstractEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/repository/CategoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/repository/CategoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/services/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/services/impl/ArticleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/commerce/gestiondestock/utils/Constants.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/EntrepriseController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/controller/api/EntrepriseApi.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/services/EntrepriseService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/utils/Constants.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -51,8 +98,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Training_Project/Spring_Java/gestion-de-stock-backend",
+    "last_opened_file_path": "D:/Training_Project/spring_java/gestion-de-stock-backend",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "spring.configuration.checksum": "8f4ea6883f179e779fb9bb8d20d62d63"
   }
 }]]></component>
@@ -74,12 +122,39 @@
       <option name="presentableId" value="Default" />
       <updated>1656068143760</updated>
       <workItem from="1656068145909" duration="3424000" />
-      <workItem from="1656406166009" duration="793000" />
+      <workItem from="1656406166009" duration="1933000" />
+      <workItem from="1656665556420" duration="9747000" />
+      <workItem from="1656846279479" duration="437000" />
+      <workItem from="1656923057215" duration="4168000" />
+      <workItem from="1657004903594" duration="8398000" />
+      <workItem from="1657181309211" duration="3403000" />
+      <workItem from="1657188351056" duration="594000" />
+      <workItem from="1657269201155" duration="1377000" />
+      <workItem from="1657291130158" duration="436000" />
+      <workItem from="1657524055141" duration="4122000" />
+      <workItem from="1657611268128" duration="2702000" />
+      <workItem from="1657697884688" duration="1720000" />
+      <workItem from="1659369526924" duration="779000" />
+      <workItem from="1659425151515" duration="2228000" />
+      <workItem from="1659513422881" duration="1219000" />
+      <workItem from="1659598801445" duration="100000" />
+      <workItem from="1660641768188" duration="2062000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -93,7 +168,22 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/interceptor/Interceptor.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/commerce/gestiondestock/interceptor/Interceptor.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.String" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
